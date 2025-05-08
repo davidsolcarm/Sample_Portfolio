@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Mendoza | Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-xl font-bold text-blue-600">CM</a>
+                <div class="flex space-x-4">
+                    <a href="#contacto" class="hidden sm:block text-gray-600 hover:text-blue-600">Contacto</a>
+                    <button id="menu-btn" class="sm:hidden text-gray-600">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-md">
+            <a href="#perfil" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Perfil</a>
+            <a href="#proyectos" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Proyectos</a>
+            <a href="#galeria" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Galería</a>
+            <a href="#extras" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Extras</a>
+            <a href="#contacto" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Perfil -->
+    <section id="perfil" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center md:flex-row md:items-start gap-8">
+                <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg">
+                    <img src="/api/placeholder/400/400" alt="Carlos Mendoza" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-3xl font-bold mb-2">Carlos Mendoza</h1>
+                    <h2 class="text-xl text-blue-600 mb-4">Diseñador & Desarrollador Web</h2>
+                    <p class="text-gray-600 max-w-lg">
+                        Soy un diseñador y desarrollador web con 5 años de experiencia creando experiencias digitales 
+                        atractivas y funcionales. Me especializo en diseño UI/UX y desarrollo frontend con enfoque en 
+                        sitios responsivos y accesibles.
+                    </p>
+                    <div class="mt-6 flex justify-center md:justify-start space-x-4">
+                        <a href="#contacto" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                            Contactar
+                        </a>
+                        <a href="#proyectos" class="border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors">
+                            Ver proyectos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Mis Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Proyecto 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/api/placeholder/600/400" alt="Proyecto Ecommerce" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">TiendaVirtual.com</h3>
+                        <p class="text-gray-600 text-sm">Desarrollo completo de plataforma ecommerce para una tienda de moda con sistema de pagos integrado y gestión de inventario.</p>
+                        <a href="#" class="inline-block mt-3 text-blue-600 hover:underline text-sm">Ver detalles →</a>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/api/placeholder/600/400" alt="Aplicación Móvil" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">FitTracker App</h3>
+                        <p class="text-gray-600 text-sm">Aplicación móvil para seguimiento de rutinas de ejercicio y nutrición, con interfaz intuitiva y sincronización en la nube.</p>
+                        <a href="#" class="inline-block mt-3 text-blue-600 hover:underline text-sm">Ver detalles →</a>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <img src="/api/placeholder/600/400" alt="Rediseño de Marca" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Rediseño CaféDelicia</h3>
+                        <p class="text-gray-600 text-sm">Renovación completa de identidad visual y sitio web para cadena local de cafeterías, aumentando ventas online en un 45%.</p>
+                        <a href="#" class="inline-block mt-3 text-blue-600 hover:underline text-sm">Ver detalles →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Galería de Proyectos</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <img src="/api/placeholder/600/600" alt="Proyecto 1" class="w-full h-40 md:h-48 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <img src="/api/placeholder/600/600" alt="Proyecto 2" class="w-full h-40 md:h-48 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <img src="/api/placeholder/600/600" alt="Proyecto 3" class="w-full h-40 md:h-48 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <img src="/api/placeholder/600/600" alt="Proyecto 4" class="w-full h-40 md:h-48 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <img src="/api/placeholder/600/600" alt="Proyecto 5" class="w-full h-40 md:h-48 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <img src="/api/placeholder/600/600" alt="Proyecto 6" class="w-full h-40 md:h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extras -->
+    <section id="extras" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Extras</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Blog -->
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-pencil-alt mr-2 text-blue-600"></i>
+                        Mi Blog
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="block hover:bg-gray-50 p-2 rounded">
+                                <h4 class="font-medium">Tendencias de diseño web para 2025</h4>
+                                <p class="text-sm text-gray-600">5 Mayo, 2025 • 5 min de lectura</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block hover:bg-gray-50 p-2 rounded">
+                                <h4 class="font-medium">Cómo optimizar la experiencia móvil</h4>
+                                <p class="text-sm text-gray-600">28 Abril, 2025 • 7 min de lectura</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block hover:bg-gray-50 p-2 rounded">
+                                <h4 class="font-medium">Guía de accesibilidad web</h4>
+                                <p class="text-sm text-gray-600">15 Abril, 2025 • 10 min de lectura</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 text-blue-600 hover:underline text-sm">Ver más artículos →</a>
+                </div>
+                
+                <!-- Canal YouTube -->
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fab fa-youtube mr-2 text-blue-600"></i>
+                        Mi Canal de YouTube
+                    </h3>
+                    <div class="aspect-w-16 aspect-h-9 mb-4">
+                        <div class="w-full h-48 bg-gray-200 rounded flex items-center justify-center">
+                            <i class="fab fa-youtube text-4xl text-gray-400"></i>
+                        </div>
+                    </div>
+                    <h4 class="font-medium">Diseño Web Desde Cero</h4>
+                    <p class="text-sm text-gray-600 mb-4">Canal educativo con tutoriales de diseño y desarrollo web para principiantes y profesionales.</p>
+                    <a href="#" class="inline-block text-red-600 hover:underline text-sm">Visitar canal →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Contacto</h2>
+            <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8">
+                <a href="mailto:carlos@ejemplo.com" class="flex items-center justify-center md:justify-start">
+                    <i class="fas fa-envelope mr-2 text-2xl"></i>
+                    <span>carlos@ejemplo.com</span>
+                </a>
+                <a href="#" class="flex items-center justify-center md:justify-start">
+                    <i class="fab fa-facebook mr-2 text-2xl"></i>
+                    <span>@CarlosMendozaDev</span>
+                </a>
+                <a href="#" class="flex items-center justify-center md:justify-start">
+                    <i class="fab fa-instagram mr-2 text-2xl"></i>
+                    <span>@carlos_mendoza</span>
+                </a>
+                <a href="#" class="flex items-center justify-center md:justify-start">
+                    <i class="fab fa-whatsapp mr-2 text-2xl"></i>
+                    <span>+34 612 345 678</span>
+                </a>
+            </div>
+            
+            <div class="mt-10 max-w-md mx-auto">
+                <form class="space-y-4">
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium mb-1">Nombre</label>
+                        <input type="text" id="nombre" class="w-full px-4 py-2 rounded-lg text-gray-800 border focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 rounded-lg text-gray-800 border focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    </div>
+                    <div>
+                        <label for="mensaje" class="block text-sm font-medium mb-1">Mensaje</label>
+                        <textarea id="mensaje" rows="4" class="w-full px-4 py-2 rounded-lg text-gray-800 border focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-white text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Carlos Mendoza</h3>
+                    <p class="text-sm">Diseñador y desarrollador web freelance especializado en crear experiencias digitales atractivas y funcionales.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Enlaces rápidos</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#perfil" class="hover:text-white">Perfil</a></li>
+                        <li><a href="#proyectos" class="hover:text-white">Proyectos</a></li>
+                        <li><a href="#galeria" class="hover:text-white">Galería</a></li>
+                        <li><a href="#extras" class="hover:text-white">Extras</a></li>
+                        <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horario de trabajo</h3>
+                    <p class="text-sm mb-2">Lunes a Viernes: 9:00 - 18:00</p>
+                    <p class="text-sm">Disponible para proyectos freelance</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-700 text-sm text-center">
+                <p>&copy; 2025 Carlos Mendoza. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle menú móvil
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Desplazamiento suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
